@@ -1,0 +1,108 @@
+.workContainer {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid rgba(49, 48, 48, 0.5);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+.workContainer h2 {
+  text-align: center;
+  position: relative;
+}
+.workContainer > h2::before {
+  content: "";
+  width: 100px;
+  position: absolute;
+  display: block;
+  height: 3px;
+  border-radius: 10px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+}
+
+.workContainer .workSubContainer .workSubContainer_left :is(.top, .bottom) {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.workContainer .workSubContainer {
+  margin-top: 4rem;
+  display: flex;
+  gap: 1rem;
+}
+.workContainer .workSubContainer .workSubContainer_left {
+  flex: 2;
+}
+.workContainer .workSubContainer .workSubContainer_left img {
+  min-width: 380px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.cardContainer {
+  max-width: 400px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+}
+
+.cardContainer h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.workSubContainer .workSubContainer_right {
+  flex: 1;
+}
+.workSubContainer .workSubContainer_right .inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.workSubContainer .workSubContainer_right .inputContainer input {
+  min-width: 100%;
+  padding: 0.8rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .workContainer .workSubContainer .workSubContainer_left :is(.top, .bottom) {
+    flex-direction: column;
+  }
+  .cardContainer {
+    max-width: 100%;
+  }
+  .workContainer .workSubContainer .workSubContainer_left {
+    flex: 1.2;
+  }
+  .workSubContainer .workSubContainer_right {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .workContainer .workSubContainer {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .workContainer {
+    padding: 0.8rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .workContainer .workSubContainer .workSubContainer_left img {
+    all: unset;
+    min-width: 100px;
+    object-fit: contain;
+  }
+}

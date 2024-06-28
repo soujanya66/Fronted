@@ -1,0 +1,159 @@
+.registerContainer form {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  background: #fff;
+}
+
+.registerContainer form h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.button_log {
+  padding: 0.5rem 4rem;
+  text-transform: uppercase;
+  outline: 0;
+  background: #002f34;
+  color: #fff;
+  border: 2px solid #002f34;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button_log:hover {
+  background: none;
+
+  color: #002f34;
+}
+
+.registerContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+}
+.registerContainer .inputContainer {
+  position: relative;
+}
+.registerContainer .inputWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.registerContainer .inputContainer input {
+  width: 400px;
+  padding: 8px;
+  outline: 0px;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  border: 2px solid #000;
+}
+
+.registerContainer .inputContainer .error {
+  border: 2px solid rgb(245, 106, 106);
+}
+.registerContainer .inputContainer .placeHolder {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  padding: 0 4px;
+  pointer-events: none;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+}
+.registerContainer .inputContainer input:focus {
+  border-color: #00aadf;
+}
+
+.registerContainer .inputContainer input:focus + .placeHolder {
+  top: -14px;
+  color: #00aadf;
+}
+.registerContainer .inputContainer .validPlaceHolder {
+  position: absolute;
+  left: 10px;
+  top: -14px;
+  padding: 0 4px;
+  pointer-events: none;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+}
+
+.registerContainer span {
+  font-size: 0.85rem;
+  color: red;
+  font-style: italic;
+  max-width: 400px;
+  padding-left: 4px;
+  display: block;
+}
+
+.registerContainer form .terms {
+  width: 100%;
+  text-align: center;
+}
+
+.registerContainer form .terms a {
+  text-decoration: underline;
+}
+
+.showpassword {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: 42px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.showIcon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.forgot a {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+  .registerContainer form {
+    width: 90%;
+  }
+  .registerContainer .inputContainer input {
+    /* width: max-content; */
+    all: unset;
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    outline: 0px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    font-size: 1.2rem;
+  }
+  .registerContainer form h1 {
+    font-size: 3rem;
+  }
+  .showpassword {
+    top: 3px;
+    right: -15px;
+    height: 42px;
+    width: 30px;
+  }
+  .registerContainer form .terms {
+    font-size: 0.9rem;
+  }
+}

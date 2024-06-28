@@ -1,0 +1,131 @@
+.footerContainer {
+  width: 100%;
+  background: black;
+  color: #a1a1a1;
+  padding: 3rem 3rem 1rem 3rem;
+}
+
+.footerContainer .footerTop {
+  display: flex;
+  gap: 2rem;
+}
+
+.footerContainer .footerTop :is(.footerLeft, .footerRight) {
+  flex: 1;
+}
+
+.footerContainer .footerTop .footerMiddle {
+  flex: 2;
+  display: flex;
+  padding: 0 2rem;
+  padding-top: 2rem;
+  gap: 5rem;
+}
+
+.footerContainer .footerTop .footerMiddle h2 {
+  padding-bottom: 1rem;
+}
+
+.footerContainer
+  .footerTop
+  .footerMiddle
+  :is(.getTouchContianer, .usefulLinkContainer)
+  > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footerRight ul {
+  display: flex;
+  gap: 1rem;
+}
+.footerBottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+.footerBottom p {
+  padding: 0 20rem;
+  text-align: center;
+}
+.footerBottom .subscription input {
+  background: transparent;
+  padding: 0.5rem;
+  width: 250px;
+  outline: none;
+  border: 1px solid #a1a1a1;
+}
+
+.footerBottom .subscription {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.button_subscribe {
+  padding: 0.4rem 1rem;
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+
+.socialIcons {
+  font-size: 3rem;
+  border-radius: 50%;
+  border: 1px solid #a1a1a1;
+  padding: 0.2rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.socialIcons:hover {
+  background: #a1a1a1;
+  color: black;
+}
+.rights {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1280px) {
+  .footerContainer .footerTop {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerContainer .footerTop .footerLeft {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .footerBottom p {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 660px) {
+  .footerContainer {
+    padding: 1rem;
+  }
+  .footerContainer .footerTop .footerMiddle {
+    flex: 1;
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+  .footerBottom .subscription {
+    display: flex;
+    flex-direction: column;
+  }
+  .button_subscribe {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footerContainer .footerTop .footerMiddle {
+    flex-direction: column;
+  }
+}

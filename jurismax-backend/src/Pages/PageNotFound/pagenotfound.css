@@ -1,0 +1,44 @@
+.pageNotFoundContainer {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.pageNotFoundContainer .pageChild {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.pageNotFoundContainer .pageChild img {
+  max-width: 700px;
+}
+
+.pageNotFoundContainer .pageChild h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #314e57;
+  font-family: "Single Day", cursive;
+}
+.pageNotFoundContainer .pageChild .pageNot_button {
+  padding: 0.7rem 2rem;
+  border-radius: 50px;
+  outline: none;
+  text-transform: uppercase;
+  border: none;
+  background-color: #3ca981;
+
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.pageNotFoundContainer .pageChild .pageNot_button {
+  color: white;
+}
+
+.pageNotFoundContainer .pageChild .pageNot_button:hover {
+  background: #41978d;
+}
